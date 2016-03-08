@@ -1,0 +1,25 @@
+{
+	"authors":[{
+		"name": "Pedro Nunes",
+		"email": "preisnunes@gmail.com",
+		"role": "Developer"
+	}],
+	 "support": {
+        "email": "preisnunes@gmail.com",
+        "irc": "irc://irc.freenode.org/composer"
+    },
+	"require": {
+		"giggsey/libphonenumber-for-php": "^7.2",
+		"phpunit/phpunit": "3.7.14",
+		"symfony/console": "3.0.1"
+	},
+	
+    "autoload": {
+        "psr-4": {
+            "PhoneGeoMatch\\": "PhonesGeoLocation/src/PhoneGeoMatch/",
+	    	"Maps\\": "PhonesGeoLocation/src/Maps/",
+	    	"Mongo\\": "PhonesGeoLocation/src/Mongo/",
+	    	"PhoneGeoApp\\": "PhonesGeoLocation/src/PhoneGeoApp/"
+    	}
+	}
+}
