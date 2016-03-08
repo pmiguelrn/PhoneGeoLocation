@@ -46,17 +46,17 @@ The reference to country inside prefix collection is indexed.
 
 Examples:
 
-# Call to Seville: +34955653084
-# Available numbers:
-# - Madrid: +34810234546
-# - Évora:  +351266745367
-# - Braga:  +351253567890
+Call to Seville: +34955653084
+Available numbers:
+ - Madrid: +34810234546
+ - Évora:  +351266745367
+ - Braga:  +351253567890
 
 $ php application.php phoneNumberGeo:match +34955653084 +34810234546 +351266745367 +351253567890 
-# Output: Évora:  +351266745367
+Output: Évora:  +351266745367
 
 $ php application.php phoneNumberGeo:match +34955653084 +34810234546 +351266745367 +351253567890 --same-country-only
-# Output: Madrid:  +34810234546
+Output: Madrid:  +34810234546
 
 
 The performance of the algorithm to find the coordinates of a phone number is approximately 0.007s at the first request and then 0.002 to the following. To a list of three custom numbers, for example, it takes around 0.02s to match a target to a custom number.  
